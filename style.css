@@ -128,13 +128,43 @@ p {
 }
 
 /* Para celulares pequenos */
-@media (max-width: 380px) {
-    .glass-card {
-        padding: 20px;
+/* Ajustes específicos para Celular */
+@media (max-width: 480px) {
+    body {
+        /* Ajusta o Shrek para aparecer melhor no celular */
+        background-position: 25% center; 
+        padding: 20px; /* Dá uma folga nas bordas da tela */
     }
-    
+
+    .glass-card {
+        width: 100%;       /* O card usa a largura disponível com segurança */
+        padding: 25px 15px; /* Diminui o espaço interno */
+        border-radius: 15px;
+    }
+
+    .profile-img {
+        width: 70px;  /* Foto um pouco menor no celular */
+        height: 70px;
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Nome menor para não quebrar linha */
+        margin-top: 10px;
+    }
+
+    p {
+        font-size: 0.8rem; /* Bio menor */
+        margin-bottom: 20px;
+    }
+
     .glass-link {
-        padding: 10px;
-        font-size: 14px;
+        padding: 10px;    /* Botões levemente mais finos */
+        font-size: 0.9rem;
+    }
+
+    .glass-footer {
+        width: 80%;
+        font-size: 10px;
+        bottom: 10px;
     }
 }
