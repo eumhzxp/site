@@ -43,25 +43,33 @@ body {
 
 /* O Card Principal (Glassmorphism) */
 .glass-card {
-    background: rgba(255, 255, 255, 0.1); /* Transparência branca */
-    backdrop-filter: blur(15px); /* Efeito de desfoque estilo Windows 11 */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda fina clara */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    padding: 40px;
-    width: 350px;
+    padding: 30px;
+    
+    /* O SEGREDO ESTÁ AQUI: */
+    width: 90%;           /* No celular, ele ocupa 90% da largura da tela */
+    max-width: 400px;     /* No PC, ele não passa de 400px (não fica gigante) */
+    
     text-align: center;
     color: white;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+.profile-img {
+    width: 80px;  /* Diminuímos um pouco de 100 para 80 */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.profile-img {
-    width: 100px;             /* Largura da imagem */
-    height: 100px;            /* Altura da imagem */
-    object-fit: cover;        /* Faz a foto preencher o círculo sem esticar */
-    border-radius: 50%;       /* Deixa a foto redonda */
-    border: 3px solid rgba(255, 255, 255, 0.4); /* Borda branca transparente */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Sombra suave */
-    margin-bottom: 15px;      /* Espaço entre a foto e o nome */
+h1 {
+    font-size: 1.5rem; /* 'rem' ajuda a adaptar ao tamanho da fonte do sistema */
+}
+
+p {
+    font-size: 0.9rem;
 }
 
 /* Estilo dos Botões/Links */
@@ -115,4 +123,6 @@ body {
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
     font-weight: 300;
+
+
 }
