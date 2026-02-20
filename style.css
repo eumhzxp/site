@@ -126,3 +126,15 @@ p {
 
 
 }
+
+/* Para celulares pequenos */
+@media (max-width: 380px) {
+    .glass-card {
+        padding: 20px;
+    }
+    
+    .glass-link {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
